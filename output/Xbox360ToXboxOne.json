@@ -134,6 +134,10 @@
     "notes": null
   },
   {
+    "game": "Asura's Wrath",
+    "notes": null
+  },
+  {
     "game": "Axel & Pixel",
     "notes": null
   },
@@ -176,6 +180,10 @@
     "notes": [
       "Available in the Vault of EA Access"
     ]
+  },
+  {
+    "game": "Battlefield 2: Modern Combat",
+    "notes": null
   },
   {
     "game": "Battlefield 3",
@@ -724,7 +732,9 @@
   },
   {
     "game": "Doom 3: BFG Edition",
-    "notes": null
+    "notes": [
+      "Avaliable on Remastered version of Doom 3, on Xbox One"
+    ]
   },
   {
     "game": "Doritos Crash Course",
@@ -801,7 +811,15 @@
     "notes": null
   },
   {
+    "game": "Enchanted Arms",
+    "notes": null
+  },
+  {
     "game": "Encleverment Experiment",
+    "notes": null
+  },
+  {
+    "game": "Enslaved: Odyssey to the West",
     "notes": null
   },
   {
@@ -858,6 +876,10 @@
     ]
   },
   {
+    "game": "Far Cry Classic",
+    "notes": null
+  },
+  {
     "game": "Far Cry 2",
     "notes": null
   },
@@ -870,6 +892,10 @@
   },
   {
     "game": "Far Cry 3: Blood Dragon",
+    "notes": null
+  },
+  {
+    "game": "Far Cry Instincts: Predator",
     "notes": null
   },
   {
@@ -1004,7 +1030,9 @@
   },
   {
     "game": "Geometry Wars 3: Dimensions",
-    "notes": null
+    "notes": [
+      "Also released on Xbox One"
+    ]
   },
   {
     "game": "Ghostbusters: Sanctum of Slime",
@@ -1205,6 +1233,10 @@
   },
   {
     "game": "ilomilo",
+    "notes": null
+  },
+  {
+    "game": "Infinite Undiscovery",
     "notes": null
   },
   {
@@ -1697,6 +1729,10 @@
     "notes": null
   },
   {
+    "game": "Peter Jackson's King Kong",
+    "notes": null
+  },
+  {
     "game": "Phantasy Star II",
     "notes": null
   },
@@ -1740,6 +1776,10 @@
   },
   {
     "game": "Prince of Persia Classic",
+    "notes": null
+  },
+  {
+    "game": "Prince of Persia: The Forgotten Sands",
     "notes": null
   },
   {
@@ -2005,6 +2045,10 @@
     "notes": null
   },
   {
+    "game": "Skate",
+    "notes": null
+  },
+  {
     "game": "Skate 3",
     "notes": [
       "Available in the Vault of EA Access"
@@ -2153,6 +2197,10 @@
     "notes": null
   },
   {
+    "game": "Star Ocean: The Last Hope",
+    "notes": null
+  },
+  {
     "game": "Star Wars: The Force Unleashed",
     "notes": null
   },
@@ -2199,6 +2247,10 @@
     "notes": null
   },
   {
+    "game": "Super Puzzle Fighter II Turbo",
+    "notes": null
+  },
+  {
     "game": "Super Street Fighter IV: Arcade Edition",
     "notes": null
   },
@@ -2208,6 +2260,10 @@
   },
   {
     "game": "Syberia",
+    "notes": null
+  },
+  {
+    "game": "Syndicate",
     "notes": null
   },
   {
@@ -2305,6 +2361,10 @@
     "notes": null
   },
   {
+    "game": "Too Human",
+    "notes": null
+  },
+  {
     "game": "Torchlight",
     "notes": null
   },
@@ -2370,6 +2430,10 @@
   },
   {
     "game": "Undertow",
+    "notes": null
+  },
+  {
+    "game": "Unreal Tournament III",
     "notes": null
   },
   {

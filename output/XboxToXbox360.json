@@ -1135,7 +1135,11 @@
   },
   {
     "game": "MVP Baseball 2004",
-    "notes": null
+    "notes": [
+      "Jerseys have pixelated rainbows",
+      "Slightly choppy audio",
+      "Slightly choppy video playback"
+    ]
   },
   {
     "game": "MTV Music Generator 3: This is the Remix",

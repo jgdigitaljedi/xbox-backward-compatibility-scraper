@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "scrape": "node scrape.js",
+    "lists": "node xboxIgdbBc/buildInitialLists.js",
+    "missing:lists": "node missing.js",
+    "missing:serve": "",
+    "missing:scraped": ""
   },
   "repository": {
     "type": "git",
@@ -23,8 +27,10 @@
   },
   "homepage": "https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper#readme",
   "dependencies": {
+    "apicalypse": "^0.1.6",
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
+    "lodash": "^4.17.15",
     "request": "^2.88.0"
   }
 }
