@@ -1,36 +1,54 @@
 {
   "name": "xbox-backward-compatibility-scraper",
-  "version": "1.0.0",
-  "description": "Node script to scrape Xbox 360 and Xbox One backwards compatibility lists and generate usable output",
-  "main": "index.js",
+  "version": "0.1.0",
+  "author": "Joey Gauthier",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scrape": "node scrape.js",
+    "build": "vue-cli-service build",
+    "copy": "copyFiles --flat xboxIgdbBc/missingIgdbData/*.json src/static",
+    "lint": "vue-cli-service lint",
     "lists": "node xboxIgdbBc/buildInitialLists.js",
     "missing:lists": "node missing.js",
-    "missing:serve": "",
-    "missing:scraped": ""
+    "missing:scraped": "",
+    "missing:serve": "npm run copy & vue-cli-service serve",
+    "scrape": "node scrape.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper.git"
+  "dependencies": {
+    "apicalypse": "^0.1.6",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "core-js": "^2.6.5",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0",
+    "vue": "^2.6.10",
+    "vuetify": "^2.0.0"
   },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "copyfiles": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.17.4",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-vuetify": "^0.6.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper/issues"
+  },
+  "homepage": "https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper#readme",
   "keywords": [
     "Node",
     "Cheerio",
     "Xbox"
   ],
-  "author": "Joey Gauthier",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper/issues"
-  },
-  "homepage": "https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper#readme",
-  "dependencies": {
-    "apicalypse": "^0.1.6",
-    "chalk": "^2.4.2",
-    "cheerio": "^1.0.0-rc.3",
-    "lodash": "^4.17.15",
-    "request": "^2.88.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgdigitaljedi/xbox-backward-compatibility-scraper.git"
   }
 }
