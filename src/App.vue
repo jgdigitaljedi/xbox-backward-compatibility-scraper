@@ -2,7 +2,7 @@
   <v-app>
     <v-layout class="app-wrapper">
       <v-container>
-        <v-card class="selection-card">
+        <v-card class="selection-card game-card">
           <v-card-title>List Selection</v-card-title>
           <v-btn
             class="selection-button"
@@ -15,11 +15,12 @@
             @click="changeList('XbToXbOne')"
           >Xbox to Xbox One</v-btn>
           <v-btn
-            :color="(selected === 'xb360ToXbOne' ? 'success' : 'primary')"
+            :color="(selected === 'Xb360ToXbOne' ? 'success' : 'primary')"
             @click="changeList('Xb360ToXbOne')"
           >Xbox 360 to Xbox One</v-btn>
         </v-card>
-        <GameInfo :game="currentGame"></GameInfo>
+        <GameInfo :game="currentGame" class="game-card"></GameInfo>
+        <IgdbSearch></IgdbSearch>
       </v-container>
     </v-layout>
   </v-app>
@@ -27,49 +28,39 @@
 
 <script>
 import GameInfo from './components/GameInfo';
-
-import XbToXboxOne from './static/XboxToXboxOne.json';
-import XbToXbox360 from './static/XboxToXbox360.json';
-import Xb360ToXboxOne from './static/Xbox360ToXboxOne.json';
-
+import IgdbSearch from './components/IgdbSearch';
+import JsonData from './services/jsonData.service';
 import * as _cloneDeep from 'lodash/cloneDeep';
 
 export default {
   name: 'App',
   components: {
-    GameInfo
+    GameInfo,
+    IgdbSearch
   },
   data: () => ({
-    remainingXbToOne: XbToXboxOne,
-    remainingXbTo360: XbToXbox360,
-    remaining360ToOne: Xb360ToXboxOne,
     selected: null,
     currentList: null,
     currentGame: null
   }),
   created() {
-    console.log('aijsdufoh', this.remainingXbTo360);
     this.selected = 'XbToXb360';
-    this.currentList = _cloneDeep(this.remainingXbTo360);
-    this.currentGame = this.currentList[0];
+    this.getList('XbToXb360');
   },
   methods: {
     changeList(list) {
       this.selected = list;
-      switch (list) {
-        case 'XbToXb360':
-          this.currentList = this.remainingXbTo360;
-          this.currentGame = this.remainingXbTo360[0];
-          break;
-        case 'XbToXbOne':
-          this.currentList = this.remainingXbToOne;
-          this.currentGame = this.remainingXbToOne[0];
-          break;
-        case 'Xb360ToXbOne':
-          this.currentList = this.remaining360ToOne;
-          this.currentGame = this.remaining360ToOne[0];
-          break;
-      }
+      this.getList(list);
+    },
+    getList(which) {
+      JsonData[which]()
+        .then(result => {
+          this.currentList = result.data;
+          this.currentGame = result.data[0];
+        })
+        .catch(error => {
+          console.warn('ERROR:', error);
+        });
     }
   }
 };
@@ -77,11 +68,13 @@ export default {
 
 <style lang="scss">
 .app-wrapper {
-  margin: 4rem auto 0;
+  margin: 3rem auto 0;
   display: flex;
   justify-content: center;
-  .selection-card {
+  .game-card {
     margin-bottom: 2rem;
+  }
+  .selection-card {
     .selection-button {
       margin-right: 1rem;
     }

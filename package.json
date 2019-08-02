@@ -4,20 +4,23 @@
   "author": "Joey Gauthier",
   "scripts": {
     "build": "vue-cli-service build",
-    "copy": "copyFiles --flat xboxIgdbBc/missingIgdbData/*.json src/static",
+    "copy": "copyFiles --flat xboxIgdbBc/missingIgdbData/*.json missingServer/static",
     "lint": "vue-cli-service lint",
     "lists": "node xboxIgdbBc/buildInitialLists.js",
     "missing:lists": "node missing.js",
     "missing:scraped": "",
-    "missing:serve": "npm run copy & vue-cli-service serve",
+    "missing:serve": "npm run copy & nodemon missingServer/server & vue-cli-service serve",
     "scrape": "node scrape.js"
   },
   "dependencies": {
     "apicalypse": "^0.1.6",
+    "axios": "^0.19.0",
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
     "core-js": "^2.6.5",
+    "cors": "^2.8.5",
     "lodash": "^4.17.15",
+    "nodemon": "^1.19.1",
     "request": "^2.88.0",
     "vue": "^2.6.10",
     "vuetify": "^2.0.0"
