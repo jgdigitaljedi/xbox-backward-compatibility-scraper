@@ -20,7 +20,7 @@
           >Xbox 360 to Xbox One</v-btn>
         </v-card>
         <GameInfo :game="currentGame" class="game-card"></GameInfo>
-        <IgdbSearch></IgdbSearch>
+        <IgdbSearch :platform="selected"></IgdbSearch>
       </v-container>
     </v-layout>
   </v-app>
