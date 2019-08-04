@@ -19,8 +19,30 @@
             @click="changeList('Xb360ToXbOne')"
           >Xbox 360 to Xbox One</v-btn>
         </v-card>
-        <GameInfo :game="currentGame" class="game-card"></GameInfo>
-        <IgdbSearch :platform="selected"></IgdbSearch>
+        <v-card class="next-and-previous game-card">
+          <v-btn color="primary" @click="changeGame(false)" :disabled="currentIndex === 0">
+            <v-icon dark left>mdi-arrow-left</v-icon>Previous Game
+          </v-btn>
+          <v-btn color="primary" @click="changeGame(true)">
+            Next Game
+            <v-icon dark right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-card>
+        <GameInfo :game="currentGame" :fixed="fixedGame" class="game-card" :reset="reset"></GameInfo>
+        <IgdbSearch
+          :platform="selected"
+          v-on:gameData="gameSelected"
+          class="game-card"
+          :reset="reset"
+        ></IgdbSearch>
+        <v-card class="save-game">
+          <v-btn color="success" @click="saveGame()" :disabled="!fixedGame">
+            <v-icon dark left>mdi-content-save</v-icon>Save Game
+          </v-btn>
+          <v-btn color="warning" @click="clearGame()">
+            <v-icon dark left>mdi-close</v-icon>Clear Game Data
+          </v-btn>
+        </v-card>
       </v-container>
     </v-layout>
   </v-app>
@@ -41,22 +63,55 @@ export default {
   data: () => ({
     selected: null,
     currentList: null,
-    currentGame: null
+    currentGame: null,
+    fixedGame: null,
+    currentIndex: 0,
+    reset: 0
   }),
   created() {
     this.selected = 'XbToXb360';
     this.getList('XbToXb360');
   },
   methods: {
+    saveGame() {
+      JsonData.saveGame(this.currentGame, this.fixedGame, this.selected)
+        .then(result => {
+          console.log('save result', result);
+          this.getList(this.selected);
+          // this.currentIndex = 0;
+          this.reset++;
+        })
+        .catch(error => {
+          console.warn('ERROR SAVING: ', error);
+        });
+    },
+    clearGame() {
+      this.fixedGame = null;
+    },
+    changeGame(next) {
+      if (next) {
+        this.currentIndex++;
+      } else if (this.currentIndex > 0) {
+        this.currentIndex--;
+      }
+      this.currentGame = this.currentList[this.currentIndex];
+    },
+    gameSelected(game) {
+      const gCopy = _cloneDeep(this.currentGame);
+      this.fixedGame = Object.assign(gCopy, game);
+    },
     changeList(list) {
       this.selected = list;
       this.getList(list);
+      this.currentIndex = 0;
+      this.fixedGame = null;
     },
     getList(which) {
       JsonData[which]()
         .then(result => {
           this.currentList = result.data;
-          this.currentGame = result.data[0];
+          this.currentGame = result.data[this.currentIndex];
+          this.fixedGame = null;
         })
         .catch(error => {
           console.warn('ERROR:', error);
@@ -71,6 +126,7 @@ export default {
   margin: 3rem auto 0;
   display: flex;
   justify-content: center;
+  width: 50%;
   .game-card {
     margin-bottom: 2rem;
   }
@@ -78,6 +134,11 @@ export default {
     .selection-button {
       margin-right: 1rem;
     }
+  }
+  .next-and-previous,
+  .save-game {
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>

@@ -1,5 +1,15 @@
 [
   {
+    "notes": null,
+    "name": "3D Ultra MiniGolf Adventures",
+    "igdbId": null
+  },
+  {
+    "notes": ["Also included as a pre-order bonus with Ace Combat 7: Skies Unknown"],
+    "name": "Ace Combat 6: Fires of Liberation",
+    "igdbId": null
+  },
+  {
     "notes": [],
     "name": "A Kingdom for Keflings",
     "igdbId": null
@@ -25,9 +35,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as a pre-order bonus with Quantum Break"
-    ],
+    "notes": ["Also included as a pre-order bonus with Quantum Break"],
     "name": "Alan Wake's American Nightmare",
     "igdbId": null
   },
@@ -57,6 +65,13 @@
     "igdbId": null
   },
   {
+    "notes": [
+      "Also available in Assassin's Creed: The Ezio Collection which includes remastered versions of Assassin's Creed II, Assassin's Creed: Brotherhood and Assassin's Creed: Revelations for Xbox One"
+    ],
+    "name": "Assassin's Creed: Revelations",
+    "igdbId": null
+  },
+  {
     "notes": null,
     "name": "Asteroids & Deluxe",
     "igdbId": null
@@ -72,9 +87,17 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
+    "name": "Banjo-Kazooie",
+    "igdbId": null
+  },
+  {
+    "notes": ["Also included as part of the Rare Replay collection of games"],
+    "name": "Banjo-Kazooie: Nuts & Bolts",
+    "igdbId": null
+  },
+  {
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Banjo-Tooie",
     "igdbId": null
   },
@@ -86,6 +109,11 @@
   {
     "notes": null,
     "name": "Beat'n Groovy",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Bejeweled 2",
     "igdbId": null
   },
   {
@@ -110,7 +138,17 @@
   },
   {
     "notes": null,
+    "name": "Bloodforge",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "BloodRayne: Betrayal",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Bolt",
     "igdbId": null
   },
   {
@@ -124,8 +162,62 @@
     "igdbId": null
   },
   {
+    "notes": [
+      "All versions of the game, including physical and digital copies, receive all DLC as a free download (on Xbox One only)"
+    ],
+    "name": "Borderlands",
+    "igdbId": null
+  },
+  {
+    "notes": [
+      "Also available in Borderlands: The Handsome Collection which includes remastered versions of Borderlands 2 and Borderlands: The Pre-Sequel for Xbox One"
+    ],
+    "name": "Borderlands 2",
+    "igdbId": null
+  },
+  {
     "notes": null,
     "name": "Braid",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Brave: The Video Game",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Bullet Soul -Infinite Burst-",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Call of Duty: Black Ops II",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Call of Duty: Modern Warfare 3",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Call of Duty: World at War",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Call of Duty 3",
+    "igdbId": null
+  },
+  {
+    "notes": ["Also available in a remastered version"],
+    "name": "Call of Duty 4: Modern Warfare",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Call of Juarez: Bound in Blood",
     "igdbId": null
   },
   {
@@ -135,7 +227,27 @@
   },
   {
     "notes": null,
+    "name": "Call of Juarez: The Cartel",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Capcom Arcade Cabinet",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Carcassonne",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Cars Mater-National Championship",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Cars 2: The Video Game",
     "igdbId": null
   },
   {
@@ -145,7 +257,22 @@
   },
   {
     "notes": null,
+    "name": "Castlevania: Lords of Shadow 2",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Castlevania: Lords of Shadow - Mirror of Fate",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Castlevania: Symphony of the Night",
+    "igdbId": null
+  },
+  {
+    "notes": [],
+    "name": "Castle Crashers",
     "igdbId": null
   },
   {
@@ -160,7 +287,32 @@
   },
   {
     "notes": null,
+    "name": "Catherine",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Cave, TheThe Cave",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Centipede & Millipede",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Command & Conquer 3: Kane's Wrath",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Command & Conquer: Red Alert 3 – Commander's Challenge",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Commanders: Attack of the Genos",
     "igdbId": null
   },
   {
@@ -180,6 +332,41 @@
   },
   {
     "notes": null,
+    "name": "Costume Quest 2",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Counter-Strike: Global Offensive",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Crackdown 2",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Crazy Taxi",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Crysis",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Crysis 2",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Crysis 3",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Crystal Defenders",
     "igdbId": null
   },
@@ -190,7 +377,52 @@
   },
   {
     "notes": null,
+    "name": "Cyber Troopers Virtual-On Oratorio Tangram",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Dante's Inferno",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available as a digital pre-order bonus with Dark Souls 3 on the Xbox store"],
+    "name": "Dark Souls",
+    "igdbId": null
+  },
+  {
+    "notes": [],
+    "name": "Dark Void",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Darkness, TheThe Darkness",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Darkness II, TheThe Darkness II",
+    "igdbId": null
+  },
+  {
+    "notes": ["Remastered as Darksiders: Warmastered Edition for Xbox One"],
+    "name": "Darksiders",
+    "igdbId": null
+  },
+  {
+    "notes": ["Remastered as Darksiders II: Deathinitive Edition for Xbox One"],
+    "name": "Darksiders II",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Daytona USA",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "de Blob 2",
     "igdbId": null
   },
   {
@@ -204,8 +436,23 @@
     "igdbId": null
   },
   {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Dead Space",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Dead Space 2",
+    "igdbId": null
+  },
+  {
     "notes": null,
     "name": "Deadliest Warrior: The Game",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "DeathSpank: Thongs of Virtue",
     "igdbId": null
   },
   {
@@ -220,6 +467,21 @@
   },
   {
     "notes": null,
+    "name": "DiRT 3",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Dirt: Showdown",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Discs of Tron",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Divinity II",
     "igdbId": null
   },
@@ -229,17 +491,23 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available as a digital pre-order bonus with Doom on the Xbox store"
-    ],
+    "notes": ["Available as a digital pre-order bonus with Doom on the Xbox store"],
     "name": "Doom",
     "igdbId": null
   },
   {
-    "notes": [
-      "Available as a digital pre-order bonus with Doom on the Xbox store"
-    ],
+    "notes": ["Available as a digital pre-order bonus with Doom on the Xbox store"],
     "name": "Doom II",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Doom 3: BFG Edition",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Doritos Crash Course",
     "igdbId": null
   },
   {
@@ -248,8 +516,23 @@
     "igdbId": null
   },
   {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Dragon Age: Origins",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available in the Vault of EA Access"],
+    "name": "Dragon Age II",
+    "igdbId": null
+  },
+  {
     "notes": null,
     "name": "Dragon's Lair",
+    "igdbId": null
+  },
+  {
+    "notes": ["Available on disc only, but existing digital owners can download it"],
+    "name": "Driver: San Francisco",
     "igdbId": null
   },
   {
@@ -269,7 +552,37 @@
   },
   {
     "notes": null,
+    "name": "Dungeon Siege III",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Earth Defense Force: Insect Armageddon",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Earth Defense Force 2017",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Earth Defense Force 2025",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Earthworm Jim HD",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Eat Lead: The Return of Matt Hazard",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Elder Scrolls IV, TheThe Elder Scrolls IV: Oblivion",
     "igdbId": null
   },
   {
@@ -279,7 +592,32 @@
   },
   {
     "notes": null,
+    "name": "Epic Mickey 2: The Power of Two",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Escape Dead Island",
+    "igdbId": null
+  },
+  {
+    "notes": null,
     "name": "Every Extend Extra Extreme",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "F1 2014",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Fable Anniversary",
+    "igdbId": null
+  },
+  {
+    "notes": null,
+    "name": "Fable Heroes",
     "igdbId": null
   },
   {
@@ -336,23 +674,17 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Feeding Frenzy",
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Feeding Frenzy 2: Shipwreck Showdown",
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Fight Night Champion",
     "igdbId": null
   },
@@ -442,30 +774,22 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-    ],
+    "notes": ["Was also available as a bonus with purchase of Gears of War: Ultimate Edition"],
     "name": "Gears of War",
     "igdbId": null
   },
   {
-    "notes": [
-      "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-    ],
+    "notes": ["Was also available as a bonus with purchase of Gears of War: Ultimate Edition"],
     "name": "Gears of War 2",
     "igdbId": null
   },
   {
-    "notes": [
-      "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-    ],
+    "notes": ["Was also available as a bonus with purchase of Gears of War: Ultimate Edition"],
     "name": "Gears of War 3",
     "igdbId": null
   },
   {
-    "notes": [
-      "Was also available as a bonus with purchase of Gears of War: Ultimate Edition"
-    ],
+    "notes": ["Was also available as a bonus with purchase of Gears of War: Ultimate Edition"],
     "name": "Gears of War: Judgment",
     "igdbId": null
   },
@@ -505,9 +829,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Goat Simulator",
     "igdbId": null
   },
@@ -577,9 +899,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Remastered version available in Halo: The Master Chief Collection"
-    ],
+    "notes": ["Remastered version available in Halo: The Master Chief Collection"],
     "name": "Halo 3",
     "igdbId": null
   },
@@ -591,16 +911,12 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Remastered version available in Halo: The Master Chief Collection"
-    ],
+    "notes": ["Remastered version available in Halo: The Master Chief Collection"],
     "name": "Halo 4",
     "igdbId": null
   },
   {
-    "notes": [
-      "Remastered version available in Halo: The Master Chief Collection"
-    ],
+    "notes": ["Remastered version available in Halo: The Master Chief Collection"],
     "name": "Halo: Combat Evolved Anniversary",
     "igdbId": null
   },
@@ -617,9 +933,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Remastered version available in Halo Wars: Defintive Edition"
-    ],
+    "notes": ["Remastered version available in Halo Wars: Defintive Edition"],
     "name": "Halo Wars",
     "igdbId": null
   },
@@ -654,9 +968,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Heavy Weapon",
     "igdbId": null
   },
@@ -673,9 +985,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Hitman: Sniper Challenge pre-order bonus is also compatible"
-    ],
+    "notes": ["Hitman: Sniper Challenge pre-order bonus is also compatible"],
     "name": "Hitman: Absolution",
     "igdbId": null
   },
@@ -743,9 +1053,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Jetpac Refuelled",
     "igdbId": null
   },
@@ -790,16 +1098,12 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also available as a bonus with purchase of successor Just Cause 3"
-    ],
+    "notes": ["Also available as a bonus with purchase of successor Just Cause 3"],
     "name": "Just Cause 2",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Kameo: Elements of Power",
     "igdbId": null
   },
@@ -869,9 +1173,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Limbo",
     "igdbId": null
   },
@@ -966,9 +1268,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Mass Effect",
     "igdbId": null
   },
@@ -1006,9 +1306,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Stand-alone disc from the Metal Gear Solid HD Collection is also compatible"
-    ],
+    "notes": ["Stand-alone disc from the Metal Gear Solid HD Collection is also compatible"],
     "name": "Metal Gear Solid: Peace Walker - HD Edition",
     "igdbId": null
   },
@@ -1138,9 +1436,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available digitally only on the Japanese Xbox Marketplace"
-    ],
+    "notes": ["Available digitally only on the Japanese Xbox Marketplace"],
     "name": "Operation Flashpoint: Red River",
     "igdbId": null
   },
@@ -1185,30 +1481,22 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Peggle",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Peggle 2",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Perfect Dark",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Perfect Dark Zero",
     "igdbId": null
   },
@@ -1233,9 +1521,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Plants vs. Zombies",
     "igdbId": null
   },
@@ -1335,9 +1621,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Rayman Legends",
     "igdbId": null
   },
@@ -1409,9 +1693,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Saints Row IV",
     "igdbId": null
   },
@@ -1441,9 +1723,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "ScreamRide",
     "igdbId": null
   },
@@ -1478,9 +1758,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Includes all three Streets of Rage games"
-    ],
+    "notes": ["Includes all three Streets of Rage games"],
     "name": "Sega Vintage Collection: Streets of Rage(Streets of Rage, 2, 3)",
     "igdbId": null
   },
@@ -1535,9 +1813,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Includes remastered versions of Silent Hill 2 & Silent Hill 3"
-    ],
+    "notes": ["Includes remastered versions of Silent Hill 2 & Silent Hill 3"],
     "name": "Silent Hill HD Collection",
     "igdbId": null
   },
@@ -1582,9 +1858,7 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Supports Sonic 3 & Knuckles for those that also own Sonic 3"
-    ],
+    "notes": ["Supports Sonic 3 & Knuckles for those that also own Sonic 3"],
     "name": "Sonic & Knuckles",
     "igdbId": null
   },
@@ -1599,16 +1873,12 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Supports Knuckles in Sonic 2 for those that also own Sonic & Knuckles"
-    ],
+    "notes": ["Supports Knuckles in Sonic 2 for those that also own Sonic & Knuckles"],
     "name": "Sonic the Hedgehog 2",
     "igdbId": null
   },
   {
-    "notes": [
-      "Supports Sonic 3 & Knuckles for those that also own Sonic & Knuckles"
-    ],
+    "notes": ["Supports Sonic 3 & Knuckles for those that also own Sonic & Knuckles"],
     "name": "Sonic the Hedgehog 3",
     "igdbId": null
   },
@@ -1658,23 +1928,17 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Japan only"
-    ],
+    "notes": ["Japan only"],
     "name": "Steins;Gate",
     "igdbId": null
   },
   {
-    "notes": [
-      "Japan only"
-    ],
+    "notes": ["Japan only"],
     "name": "Steins;Gate: Hiyoku Renri no Darling",
     "igdbId": null
   },
   {
-    "notes": [
-      "Japan only"
-    ],
+    "notes": ["Japan only"],
     "name": "Steins;Gate: Senkei Kōsoku no Phenogram",
     "igdbId": null
   },
@@ -1834,37 +2098,27 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Viva Piñata",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also included as part of the Rare Replay collection of games"
-    ],
+    "notes": ["Also included as part of the Rare Replay collection of games"],
     "name": "Viva Piñata: Trouble in Paradise",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Walking Dead, TheThe Walking Dead",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Walking Dead: Michonne, TheThe Walking Dead: Michonne",
     "igdbId": null
   },
   {
-    "notes": [
-      "Also released on Xbox One"
-    ],
+    "notes": ["Also released on Xbox One"],
     "name": "Walking Dead: Season Two, TheThe Walking Dead: Season Two",
     "igdbId": null
   },
@@ -1899,16 +2153,12 @@
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Zuma",
     "igdbId": null
   },
   {
-    "notes": [
-      "Available in the Vault of EA Access"
-    ],
+    "notes": ["Available in the Vault of EA Access"],
     "name": "Zuma's Revenge!",
     "igdbId": null
   }

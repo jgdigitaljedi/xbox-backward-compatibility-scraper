@@ -13,12 +13,9 @@
         hide-no-data
         return-object
       ></v-autocomplete>
-      <v-btn
-        class="select-btn"
-        @click="selectionMade()"
-        color="primary"
-        :disabled="!model"
-      >Select Game</v-btn>
+      <v-btn class="select-btn" @click="selectionMade()" color="primary" :disabled="!model">
+        <v-icon dark left>mdi-check-bold</v-icon>Select Game
+      </v-btn>
     </div>
   </v-card>
 </template>
@@ -30,7 +27,8 @@ import * as _debounce from 'lodash/debounce';
 export default {
   name: 'IgdbSearch',
   props: {
-    platform: null
+    platform: null,
+    reset: null
   },
   data: () => ({
     games: null,
@@ -42,7 +40,7 @@ export default {
     selectionMade() {
       console.log('selection', this.model);
       const cleaned = {
-        id: this.model.id,
+        igdbId: this.model.id,
         name: this.model.name
       };
       this.$emit('gameData', cleaned);
@@ -63,9 +61,17 @@ export default {
   },
   watch: {
     search: _debounce(function(val) {
-      console.log('search', val);
-      this.searchIgdb(val, this.platform);
-    }, 800)
+      if (val) {
+        this.searchIgdb(val, this.platform);
+      }
+    }, 800),
+    reset: function(val) {
+      console.log('reset ran');
+      this.isLoading = false;
+      this.games = null;
+      this.search = null;
+      this.model = null;
+    }
   }
 };
 </script>

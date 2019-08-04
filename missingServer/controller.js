@@ -9,6 +9,12 @@ const fs = require('fs');
 const path = require('path');
 const apicalypse = require('apicalypse').default;
 
+const listObj = {
+  XbToXb360: 'XboxToXbox360',
+  XbToXbOne: 'XboxToXboxOne',
+  Xb360ToXbOne: 'Xbox360ToXboxOne'
+};
+
 /* IGDB Search */
 
 function apiSearch(name, platform) {
@@ -47,13 +53,22 @@ router.post('/search', async (req, res) => {
 /* Getters */
 
 function xbTo360() {
-  return fs.readFileSync(path.join(__dirname, 'static/XboxToXbox360.json'), 'utf-8');
+  return fs.readFileSync(
+    path.join(__dirname, '../xboxIgdbBc/missingIgdbData/XboxToXbox360.json'),
+    'utf-8'
+  );
 }
 function xbToOne() {
-  return fs.readFileSync(path.join(__dirname, 'static/XboxToXboxOne.json'), 'utf-8');
+  return fs.readFileSync(
+    path.join(__dirname, '../xboxIgdbBc/missingIgdbData/XboxToXboxOne.json'),
+    'utf-8'
+  );
 }
 function xb360ToOne() {
-  return fs.readFileSync(path.join(__dirname, 'static/Xbox360ToXboxOne.json'), 'utf-8');
+  return fs.readFileSync(
+    path.join(__dirname, '../xboxIgdbBc/missingIgdbData/Xbox360ToXboxOne.json'),
+    'utf-8'
+  );
 }
 
 router.get('/xbto360', async (req, res) => {
@@ -82,30 +97,65 @@ function removeFromList(which, data) {
     const parsed = JSON.parse(masterList);
     const names = parsed.map(p => p.name);
     const index = names.indexOf(data.name);
-    const withRemoved = parsed.splice(index, 1);
-    // write file here
+    parsed.splice(index, 1);
+    fs.writeFile(
+      path.join(__dirname, `../xboxIgdbBc/missingIgdbData/${which}.json`),
+      JSON.stringify(parsed, null, 2),
+      error => {
+        if (error) {
+          reject({ error: true });
+        } else {
+          resolve(parsed);
+        }
+      }
+    );
   });
 }
 
-function addToList(which, data) {
+function addToList(which, oldData, newData) {
   return new Promise((resolve, reject) => {
     const masterList = fs.readFileSync(
-      path.join(__dirname, `../xboxIgdbBc/IGDBoutput/${which}.json`),
+      path.join(__dirname, `../finalOutput/${which}.json`),
       'utf-8'
     );
     const parsed = JSON.parse(masterList);
     const names = parsed.map(p => p.name);
-    const index = names.indexOf(data.name);
-    parsed[index].igdbId = data.igdbId;
-    parsed[index].name = data.newName;
-    resolve(parsed);
+    console.log('names', names);
+    const index = names.indexOf(oldData.name);
+    console.log('oldData', oldData);
+    console.log('index', index);
+    parsed[index].igdbId = newData.igdbId;
+    parsed[index].name = newData.name;
+    fs.writeFile(
+      path.join(__dirname, `../finalOutput/${which}.json`),
+      JSON.stringify(parsed, null, 2),
+      error => {
+        if (error) {
+          reject({ error: true });
+        } else {
+          resolve(parsed);
+        }
+      }
+    );
   });
 }
 
-router.post('/xbto360', async (req, res) => {
-  const add = await addToList('XboxToXbox360', req.body.game);
-  const removed = await removeFromList('XboxToXbox360', req.body.game);
-  res.json(JSON.parse(add));
+router.post('/savegame', async (req, res) => {
+  const { oldData, newData, list } = req.body;
+  if (oldData && newData && list) {
+    const listFull = listObj[list];
+    const add = await addToList(listFull, oldData, newData);
+    const removed = await removeFromList(listFull, oldData);
+    if (add.error || removed.error) {
+      res
+        .status(500)
+        .json({ error: true, message: 'ERROR: SOMETHING WENT WRONG WITH THE FILE OPERATIONS!' });
+    } else {
+      res.json(add);
+    }
+  } else {
+    res.status(500).json({ error: true, message: 'ERROR: INCOMPLETE REQUEST!' });
+  }
 });
 
 module.exports = router;

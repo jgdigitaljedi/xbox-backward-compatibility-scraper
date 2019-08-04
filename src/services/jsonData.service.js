@@ -12,5 +12,8 @@ export default {
   },
   Xb360ToXbOne() {
     return axios.get('http://localhost:4001/api/xb360toone');
+  },
+  saveGame(oldData, newData, list) {
+    return axios.post('http://localhost:4001/api/saveGame', { oldData, newData, list });
   }
 };
