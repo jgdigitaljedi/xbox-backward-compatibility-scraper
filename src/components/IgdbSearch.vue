@@ -1,6 +1,12 @@
 <template>
   <v-card class="search">
-    <v-card-title>IGDB Search</v-card-title>
+    <v-card-title d-flex>
+      <div>
+        IGDB Search
+      </div>
+      <v-spacer></v-spacer>
+      <v-switch v-model="fuzzy" label="Fuzzy Search"></v-switch>
+    </v-card-title>
     <div class="search-results">
       <v-autocomplete
         label="Search Game Here"
@@ -34,16 +40,16 @@ export default {
     games: null,
     isLoading: false,
     search: null,
-    model: null
+    model: null,
+    fuzzy: false
   }),
   methods: {
     selectionMade() {
-      console.log('selection', this.model);
       const cleaned = {
         igdbId: this.model.id,
         name: this.model.name
       };
-      this.$emit('gameData', cleaned);
+      this.$emit('gameData', {cleaned, fuzzy: this.fuzzy});
     },
     searchIgdb(name, platform) {
       this.isLoading = true;

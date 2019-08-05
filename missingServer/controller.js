@@ -17,19 +17,27 @@ const listObj = {
 
 /* IGDB Search */
 
+const requestOptions = {
+  method: 'POST',
+  baseURL: 'https://api-v3.igdb.com',
+  headers: {
+    Accept: 'application/json',
+    'user-key': process.env.IGDBV3KEY
+  }
+};
+
 function apiSearch(name, platform) {
-  const requestOptions = {
-    method: 'POST',
-    baseURL: 'https://api-v3.igdb.com',
-    headers: {
-      Accept: 'application/json',
-      'user-key': process.env.IGDBV3KEY
-    }
-  };
   return apicalypse(requestOptions)
     .fields(`name,id`)
     .search(name)
     .where(`platforms = [${platform}]`)
+    .request('/games');
+}
+
+function fuzzyApiSearch(name) {
+  return apicalypse(requestOptions)
+    .fields(`name,id,platforms`)
+    .search(name)
     .request('/games');
 }
 
@@ -47,6 +55,15 @@ router.post('/search', async (req, res) => {
     res.json(apiResults.data);
   } else {
     res.status(500).json({ error: true, message: 'You must send a name and a platform!' });
+  }
+});
+
+router.post('/fuzzy', async (req, res) => {
+  if (req.body.name) {
+    const apiResults = await fuzzyApiSearch(req.body.name);
+    res.json(apiResults.data);
+  } else {
+    res.status(500).json({ error: true, message: 'You must send a name!' });
   }
 });
 

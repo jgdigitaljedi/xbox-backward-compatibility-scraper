@@ -96,9 +96,9 @@ export default {
       }
       this.currentGame = this.currentList[this.currentIndex];
     },
-    gameSelected(game) {
+    gameSelected(gameData) {
       const gCopy = _cloneDeep(this.currentGame);
-      this.fixedGame = Object.assign(gCopy, game);
+      this.fixedGame = Object.assign(gCopy, gameData.cleaned);
     },
     changeList(list) {
       this.selected = list;
