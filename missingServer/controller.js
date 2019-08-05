@@ -120,10 +120,7 @@ function addToList(which, oldData, newData) {
     );
     const parsed = JSON.parse(masterList);
     const names = parsed.map(p => p.name);
-    console.log('names', names);
     const index = names.indexOf(oldData.name);
-    console.log('oldData', oldData);
-    console.log('index', index);
     parsed[index].igdbId = newData.igdbId;
     parsed[index].name = newData.name;
     fs.writeFile(
