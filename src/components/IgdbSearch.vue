@@ -55,16 +55,16 @@ export default {
     searchIgdb(name, platform) {
       this.isLoading = true;
       if (this.fuzzy) {
-        JsonData.search(name, platform)
-        .then(result => {
-          console.log('results', result.data);
-          this.games = result.data;
-          this.isLoading = false;
-        })
-        .catch(error => {
-          this.isLoading = false;
-          console.warn('ERROR searching: ', error);
-        });
+        JsonData.fuzzy(name)
+          .then(result => {
+            console.log('results', result.data);
+            this.games = result.data;
+            this.isLoading = false;
+          })
+          .catch(error => {
+            this.isLoading = false;
+            console.warn('ERROR searching: ', error);
+          });
       } else {
         JsonData.search(name, platform)
           .then(result => {

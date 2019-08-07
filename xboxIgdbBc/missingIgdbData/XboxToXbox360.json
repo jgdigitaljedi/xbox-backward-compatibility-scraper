@@ -1,41 +1,9 @@
 [
   {
-    "notes": null,
-    "name": "Atari Anthology",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Casino",
-    "igdbId": null
-  },
-  {
-    "notes": [
-      "After the opening logos, a dirty disc error is occasionally displayed"
-    ],
-    "name": "Dai Senryaku VII: Modern Military Tactics",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Ford Mustang: The Legend Lives",
-    "igdbId": null
-  },
-  {
     "notes": [
       "An Xbox version was planned but never released however this title is included on Microsoft's official backwards compatible list"
     ],
     "name": "He-Man: Defender of Grayskull",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "High Heat: Major League Baseball 2004",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "IHRA Professional Drag Racing 2005",
     "igdbId": null
   },
   {
@@ -45,96 +13,7 @@
   },
   {
     "notes": null,
-    "name": "Magatama",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Maximum Chase",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Micro Machines",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "MLB SlugFest 2004",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "MLB Slugfest: Loaded",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Monster Garage",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "MVP Baseball 2004",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "MTV Music Generator 3: This is the Remix",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "MX World Tour Featuring Jamie Little",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Namco Museum",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Namco Museum 50th Anniversary Arcade Collection",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "NBA Inside Drive 2002",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "NFL Blitz 2002",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "NFL Blitz 2003",
-    "igdbId": null
-  },
-  {
-    "notes": null,
     "name": "Pro Race Driver",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Pump It Up: Exceed",
-    "igdbId": null
-  },
-  {
-    "notes": [
-      "There is audio stuttering during the gameplay, and players render as a dark silhouette on the right side of the field but only during the first game played"
-    ],
-    "name": "Rugby 2006",
-    "igdbId": null
-  },
-  {
-    "notes": [
-      "An Xbox version was planned but never released however this title is included on Microsoft's official backwards compatible list"
-    ],
-    "name": "Samurai Jack: The Shadow of Aku",
     "igdbId": null
   },
   {
@@ -142,62 +21,6 @@
       "A line-like graphic is displayed near the character's neck"
     ],
     "name": "Shinchou Mahjong (Nobunaga Mahjong)",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Spy Hunter 2",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Starsky and Hutch",
-    "igdbId": null
-  },
-  {
-    "notes": [
-      "There are minor performance drops and minor texture flickering during gameplay",
-      "Character voices are missing during cut scenes from stage 35 until end of game"
-    ],
-    "name": "Test Drive",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Thousand Land",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Trigger Man",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Urban Freestyle Soccer (PAL)",
-    "igdbId": null
-  },
-  {
-    "notes": [
-      "In the Cozmo Street area the game stutters",
-      "While on loading screens random system hardlocks will occur"
-    ],
-    "name": "The Urbz: Sims in the City",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Volvo: Drive For Life",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "Wakeboarding Unleashed featuring Shaun Murray",
-    "igdbId": null
-  },
-  {
-    "notes": null,
-    "name": "World Soccer Winning Eleven 9[a]",
     "igdbId": null
   }
 ]
