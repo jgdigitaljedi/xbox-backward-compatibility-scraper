@@ -34,6 +34,7 @@
           v-on:gameData="gameSelected"
           class="game-card"
           :reset="reset"
+          v-on:fuzzyToggle="fuzzyToggled"
         ></IgdbSearch>
         <v-card class="save-game">
           <v-btn color="success" @click="saveGame()" :disabled="!fixedGame">
@@ -73,6 +74,10 @@ export default {
     this.getList('XbToXb360');
   },
   methods: {
+    fuzzyToggled(fuzzy) {
+      console.log('fuzzy', fuzzy);
+      this.fuzzy = fuzzy;
+    },
     saveGame() {
       JsonData.saveGame(this.currentGame, this.fixedGame, this.selected)
         .then(result => {
@@ -98,7 +103,7 @@ export default {
     },
     gameSelected(gameData) {
       const gCopy = _cloneDeep(this.currentGame);
-      this.fixedGame = Object.assign(gCopy, gameData.cleaned);
+      this.fixedGame = Object.assign(gCopy, gameData);
     },
     changeList(list) {
       this.selected = list;

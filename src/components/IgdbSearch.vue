@@ -1,11 +1,9 @@
 <template>
   <v-card class="search">
     <v-card-title d-flex>
-      <div>
-        IGDB Search
-      </div>
+      <div>IGDB Search</div>
       <v-spacer></v-spacer>
-      <v-switch v-model="fuzzy" label="Fuzzy Search"></v-switch>
+      <v-switch v-model="fuzzy" label="Fuzzy Search" :change="fuzzyToggle()"></v-switch>
     </v-card-title>
     <div class="search-results">
       <v-autocomplete
@@ -44,16 +42,20 @@ export default {
     fuzzy: false
   }),
   methods: {
+    fuzzyToggle() {
+      this.$emit('fuzzyToggle', this.fuzzy);
+    },
     selectionMade() {
       const cleaned = {
         igdbId: this.model.id,
         name: this.model.name
       };
-      this.$emit('gameData', {cleaned, fuzzy: this.fuzzy});
+      this.$emit('gameData', cleaned);
     },
     searchIgdb(name, platform) {
       this.isLoading = true;
-      JsonData.search(name, platform)
+      if (this.fuzzy) {
+        JsonData.search(name, platform)
         .then(result => {
           console.log('results', result.data);
           this.games = result.data;
@@ -63,6 +65,18 @@ export default {
           this.isLoading = false;
           console.warn('ERROR searching: ', error);
         });
+      } else {
+        JsonData.search(name, platform)
+          .then(result => {
+            console.log('results', result.data);
+            this.games = result.data;
+            this.isLoading = false;
+          })
+          .catch(error => {
+            this.isLoading = false;
+            console.warn('ERROR searching: ', error);
+          });
+      }
     }
   },
   watch: {
@@ -72,7 +86,6 @@ export default {
       }
     }, 800),
     reset: function(val) {
-      console.log('reset ran');
       this.isLoading = false;
       this.games = null;
       this.search = null;
