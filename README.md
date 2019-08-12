@@ -1,4 +1,5 @@
 # xbox-backward-compatibility-scraper
+
 The intent of this script is to scrape 2 lists from the corresponding Wikipedia pages to collect the following data:
 
 - Xbox games that work on the Xbox 360 and their issues
@@ -9,7 +10,7 @@ It's not the most useful data in the world, but I am a retro game collector and 
 
 <b>NOTE: Microsoft stopped adding to the backwards compatibility since the Xbox One is old and the new Xbox will be coming out next year. Once I complete this and get the final lists built, there will be no reason to use the script but, instead, just use the lists I generated in the "finalOutput" directory.</b>
 
-<b>UPDATE: Let me save you the trouble if you only want the backward compatibility lists: the progress I've made so far lives in the "finalOutput" folder.
+<b>UPDATE: Let me save you the trouble if you only want the backward compatibility lists: the progress I've made so far lives in the "finalOutput" folder. At this point I've managed to get IGDB IDs matched to all but 4 games and they just don't seem to be in the IGDB database. I'm calling it complete for now. Might circle back and set this up to also add other video game IDs in the future.
 
 If you're curious about the code then feel free to continue on. Just know that I am a little fast and loose with this project since the only reason it exists is to generate these lists and, once completed, there will be no need for this codebase.
 
