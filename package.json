@@ -24,7 +24,7 @@
     "nodemon": "^1.19.1",
     "request": "^2.88.0",
     "vue": "^2.6.10",
-    "vuetify": "^2.0.0"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
